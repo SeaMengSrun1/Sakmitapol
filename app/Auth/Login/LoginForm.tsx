@@ -45,7 +45,7 @@ export default function Login(){
             localStorage.setItem('token', data.token);
             
             // Redirect to dashboard or home page
-            router.push('Admin/Dashboard');
+            router.push('/Admin/Dashboard');
         } catch (err: any) {
             setError(err.message || 'An error occurred during login');
             console.error('Login error:', err);
